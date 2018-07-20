@@ -14,7 +14,7 @@ echo -en "[$time] ${RED}Install my Bash theme ${NORMAL}"
 {
 	echo 'PATH=$PATH:/usr/local/vesta/bin'
 	echo 'export PATH'
-	echo 'export PS1="\[\e[37m\][\[\e[m\]\[\e[36m\]\T\[\e[m\]\[\e[37m\]]\[\e[m\] \[\e[31m\]\u\[\e[m\]\[\e[35m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\]\[\e[31m\]\\$\[\e[m\] \n"'
+	echo 'export PS1="\[\e[37m\][\[\e[m\]\[\e[36m\]\T\[\e[m\]\[\e[37m\]]\[\e[m\] \[\e[31m\]\u\[\e[m\]\[\e[35m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\]\[\e[31m\]\\$\[\e[m\] "'
 	echo 'if [ -x /usr/bin/dircolors ]; then'
 	echo '    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"'
 	echo '    alias ls='ls --color=auto''
