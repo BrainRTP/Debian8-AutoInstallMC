@@ -37,10 +37,10 @@ sleep 1
 apt-get update
 
 echo ""
-echo -en "[$time] ${RED}Install mc, screen, htop, sudo ${NORMAL}"
+echo -en "[$time] ${RED}Install mc, screen, htop, sudo, git ${NORMAL}"
 echo ""
 sleep 1
-apt-get install mc screen htop sudo
+apt-get install mc screen htop sudo git
 
 echo ""
 echo -en "[$time] ${RED}Install LAMP ${NORMAL}"
@@ -72,7 +72,7 @@ echo ""
 echo -en "[$time] ${RED}Preconfigurate Server ${NORMAL}"
 echo ""
 mkdir /home/Server
-echo "eula=true" /home/Server/eula.txt
+echo "eula=true" > /home/Server/eula.txt
 
 echo ""
 echo -en "[$time] ${RED}Install BuildTools ${NORMAL}"
@@ -98,6 +98,5 @@ java -jar /home/BuildTools/BuildTools.jar --rev latest
 cp 
 
 echo ""
-
 echo -en "[$time] ${RED}The script is executed in ${GREEN}$(($(date +%s)-$starttime)) ${RED}seconds ${NORMAL}"
 echo ""
