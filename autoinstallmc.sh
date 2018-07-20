@@ -66,9 +66,9 @@ mkdir /home/manage/
 
 echo ""
 echo "[$time] Download manage skript"
-curl -o https://raw.githubusercontent.com/BrainRTP/Debian8-AutoInstallMC/master/start.sh > /home/manage/stat.sh
-curl -o https://raw.githubusercontent.com/BrainRTP/Debian8-AutoInstallMC/master/backup.sh > /home/manage/backup.sh
-curl -o https://raw.githubusercontent.com/BrainRTP/Debian8-AutoInstallMC/master/cleaner.sh > /home/manage/cleaner.sh
+curl -0 https://raw.githubusercontent.com/BrainRTP/Debian8-AutoInstallMC/master/start.sh > /home/manage/stat.sh
+curl -0 https://raw.githubusercontent.com/BrainRTP/Debian8-AutoInstallMC/master/backup.sh > /home/manage/backup.sh
+curl -0 https://raw.githubusercontent.com/BrainRTP/Debian8-AutoInstallMC/master/cleaner.sh > /home/manage/cleaner.sh
 
 echo ""
 echo "[$time] Install Spigot latest build"
