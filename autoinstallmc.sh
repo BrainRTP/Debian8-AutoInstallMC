@@ -12,7 +12,7 @@ echo "[$time] Install my Bash theme"
 	echo 'fi'
 } > ~/.bashrc
 source ~/.bashrc
-sleep (1)
+sleep 1
 
 echo ""
 echo "[$time] Clean MOTD"
@@ -21,34 +21,34 @@ source /etc/motd
 
 echo ""
 echo "[$time] Update"
-sleep (1)
+sleep 1
 apt-get update
 
 echo ""
 echo "[$time] Install mc, screen, htop, sudo"
-sleep (1)
+sleep 1
 apt-get install mc screen htop sudo
 
 echo ""
 echo "[$time] Install LAMP"
-sleep (1)
+sleep 1
 sudo apt-get install apache2 php php-mysql libapache2-mod-php php-mbstring php-zip php-gd phpmyadmin
 sudo apt-get install mysql-server mysql-client mysql-common
 
 echo ""
 echo "[$time] Java preinstall"
-sleep (1)
+sleep 1
 echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list
 echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
 
 echo ""
 echo "[$time] Update"
-sleep (1)
+sleep 1
 apt-get update
 
 echo ""
 echo "[$time] Install Java 8"
-sleep (1)
+sleep 1
 apt-get install oracle-java8-installer
 
 echo ""
@@ -72,7 +72,7 @@ curl -0 https://raw.githubusercontent.com/BrainRTP/Debian8-AutoInstallMC/master/
 
 echo ""
 echo "[$time] Install Spigot latest build"
-sleep (1)
+sleep 1
 java -jar /home/BuildTools/BuildTools.jar --rev latest
 cp 
 
